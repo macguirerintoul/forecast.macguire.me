@@ -10,8 +10,6 @@
     >
       <template v-slot="{ item, index, revealLeft, revealRight, close }">
         <Event
-          :id="item._id"
-          :key="item._id"
           :index="index"
           :title="item.title"
           :due="item.due"
@@ -77,15 +75,6 @@ export default {
     return {
       events: [],
     }
-  },
-  async mounted() {
-    // For some reason, this must happen first or it doesn't work
-    // const rect = document
-    //   .getElementById('events-container')
-    //   .getBoundingClientRect()
-    // // 32 is the hard-coded height of the menu bar (2em)
-    // window.scrollTo(0, rect.top - 32)
-    // this.getEvents()
   },
   methods: {
     eventRightClick(index) {
@@ -158,8 +147,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $el-dark;
-  height: 114vh;
+  min-height: 30em;
+  // height: 114vh;
   padding-top: 2em;
+  h1 {
+    font-size: 2em;
+  }
   h1,
   h2 {
     margin: 0;

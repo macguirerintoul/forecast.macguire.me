@@ -18,7 +18,6 @@ const moment = require('moment')
 export default {
   name: 'Event',
   props: {
-    id: { type: String, required: true },
     index: { type: Number, required: true },
     title: { type: String, required: true },
     due: { type: Object, required: true },
