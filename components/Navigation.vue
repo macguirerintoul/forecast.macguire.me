@@ -2,8 +2,8 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <img src="/icon.png" width="48" />
-        <span>Forecast</span>
+        <img id="logo-icon" src="/icon.png" width="48" />
+        <span id="logo-text">Forecast</span>
       </nuxt-link>
 
       <a
@@ -51,10 +51,16 @@
 
 <style lang="scss" scoped>
 .navbar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   min-height: 3.25rem;
-  position: relative;
   z-index: 30;
+  top: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  // same width as container
+  max-width: 50em;
+  margin: auto;
 }
 
 .navbar,
@@ -70,6 +76,18 @@
   display: flex;
   flex-shrink: 0;
   min-height: 3.25rem;
+  a {
+    text-decoration: none;
+  }
+  #logo-icon {
+    margin-right: 0.5em;
+  }
+  #logo-text {
+    color: #000;
+
+    font-size: 2em;
+    font-weight: 700;
+  }
 }
 
 .navbar-menu {
@@ -80,6 +98,9 @@
 .navbar-end {
   justify-content: flex-end;
   margin-left: auto;
+  .navbar-item {
+    padding-left: 1em;
+  }
 }
 
 .navbar-item {
@@ -89,7 +110,8 @@
   flex-grow: 0;
   flex-shrink: 0;
   line-height: 1.5;
-  padding: 0.5rem 0.75rem;
   position: relative;
+  color: #000;
+  text-decoration: none;
 }
 </style>

@@ -7,4 +7,8 @@
   </div>
 </template>
 
-<style></style>
+<script>
+export default {
+  layout: 'index',
+}
+</script>
