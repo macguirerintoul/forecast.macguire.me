@@ -1,11 +1,13 @@
 <template>
   <div id="container">
     <Navigation />
-    <div style="width: 50%">
-      <nuxt />
-    </div>
-    <div style="width: 50%">
-      <h6>the demo goes here</h6>
+    <div id="index-showcase">
+      <div style="width: 50%">
+        <nuxt />
+      </div>
+      <div style="width: 50%">
+        <h6>the demo goes here</h6>
+      </div>
     </div>
   </div>
 </template>
@@ -20,3 +22,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+#index-showcase {
+  display: flex;
+}
+</style>

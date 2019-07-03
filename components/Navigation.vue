@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <img id="logo-icon" src="/icon.png" width="48" />
+        <img id="logo-icon" src="/icon.png" width="38" />
         <span id="logo-text">Forecast</span>
       </nuxt-link>
 
