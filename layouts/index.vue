@@ -36,6 +36,8 @@ export default {
   }
 }
 #demo {
-  border: 1px solid black;
+  height: 35em;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 </style>

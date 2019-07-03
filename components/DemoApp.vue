@@ -38,19 +38,11 @@
         <div id="links">
           <h6>
             Created by
-            <a
-              href="https://mrintoul.com"
-              @click="openURL('https://mrintoul.com', $event)"
-              >Macguire Rintoul</a
-            >
+            <a href="https://mrintoul.com">Macguire Rintoul</a>
           </h6>
           <h6>
             View on
-            <a
-              href="https://github.com/mrintoul/forecast"
-              @click="openURL('https://github.com/mrintoul/forecast', $event)"
-              >GitHub</a
-            >
+            <a href="https://github.com/mrintoul/forecast">GitHub</a>
           </h6>
         </div>
       </div>
@@ -75,6 +67,10 @@ export default {
     return {
       events: [],
     }
+  },
+  mounted() {
+    console.log('demo app mounted')
+    document.getElementById('demo').scrollTop = 136
   },
   methods: {
     eventRightClick(index) {
@@ -147,8 +143,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $el-dark;
-  min-height: 30em;
-  // height: 114vh;
+  height: 41em;
   padding-top: 2em;
   h1 {
     font-size: 2em;
