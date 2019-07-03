@@ -2,10 +2,10 @@
   <div id="container">
     <Navigation />
     <div id="index-showcase">
-      <div style="width: 50%">
+      <div>
         <nuxt />
       </div>
-      <div style="width: 50%">
+      <div id="demo">
         <DemoApp />
       </div>
     </div>
@@ -30,5 +30,12 @@ export default {
 <style lang="scss" scoped>
 #index-showcase {
   display: flex;
+  justify-content: space-between;
+  & > div {
+    width: 48%;
+  }
+}
+#demo {
+  border: 1px solid black;
 }
 </style>
