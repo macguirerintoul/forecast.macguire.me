@@ -6,7 +6,7 @@
         <nuxt />
       </div>
       <div style="width: 50%">
-        <h6>the demo goes here</h6>
+        <DemoApp />
       </div>
     </div>
   </div>
@@ -16,9 +16,13 @@
 // eslint-disable-next-line
 import Navigation from '../components/Navigation.vue'
 
+// import the app components
+import DemoApp from '../components/DemoApp.vue'
+
 export default {
   components: {
     Navigation,
+    DemoApp,
   },
 }
 </script>
