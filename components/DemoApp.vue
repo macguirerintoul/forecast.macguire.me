@@ -70,7 +70,7 @@ export default {
   },
   mounted() {
     console.log('demo app mounted')
-    document.getElementById('demo').scrollTop = 136
+    document.getElementById('app-container').scrollTop = 136
   },
   methods: {
     eventRightClick(index) {
@@ -120,30 +120,13 @@ body {
   box-sizing: border-box;
   background-color: $bg-light;
 }
-#title-bar {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  -webkit-app-region: drag;
-  background-color: $bg-light;
-  height: 2.2em;
-  text-align: center;
-  border-bottom: 1px solid $light-grey;
-  span {
-    margin: auto;
-    font-size: 10pt;
-  }
-}
 #app {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $el-dark;
-  height: 41em;
+  height: 44em;
   padding-top: 2em;
   h1 {
     font-size: 2em;

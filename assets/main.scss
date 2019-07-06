@@ -12,15 +12,34 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 h1 {
   font-size: 5em;
   line-height: 1em;
+  margin-bottom: 2rem;
 }
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 p {
-  font-size: 2em;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  background: #fff;
+  border: 2px solid black;
+  padding: 0.5em;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .notifications {
