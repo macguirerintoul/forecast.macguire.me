@@ -40,6 +40,10 @@
           >
             GitHub
           </a>
+
+          <nuxt-link to="/download" class="navbar-item">
+            <button>Download</button>
+          </nuxt-link>
         </div>
       </div>
       <!-- link to bulma cdn for debugging -->

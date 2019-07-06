@@ -52,6 +52,14 @@ button {
   padding: 0.5em;
   border-radius: 6px;
   font-size: 1.5rem;
+  img {
+    position: relative;
+    top: 1px;
+    width: 24px;
+  }
+}
+nav button {
+  font-size: inherit;
 }
 .download {
   margin-bottom: 2rem;

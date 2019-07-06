@@ -1,7 +1,10 @@
 <template>
   <div class="download">
-    <button @click="download()">Download {{ downloadString }}</button>
-    <nuxt-link class="tiny" to="releases">other platforms</nuxt-link>
+    <button @click="download()">
+      <!-- eslint-disable-next-line -->
+      <span v-html="icon"></span> Download {{ downloadString }}
+    </button>
+    <nuxt-link class="tiny" to="download">other platforms</nuxt-link>
   </div>
 </template>
 <script>
@@ -12,6 +15,12 @@ export default {
   computed: {
     downloadString() {
       return this.os !== '' ? ` for ${this.os}` : ''
+    },
+    icon() {
+      if (this.os === 'Windows')
+        return '<img src="windows.svg" alt="Windows icon"/>'
+      if (this.os === 'macOS') return '<img src="macos.svg" alt="macOS icon"/>'
+      return ''
     },
   },
   methods: {
