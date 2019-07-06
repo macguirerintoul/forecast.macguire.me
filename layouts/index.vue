@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <Navigation />
+    <Header />
     <div id="index-showcase">
       <div>
         <nuxt />
@@ -14,33 +14,28 @@
         </div>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 // eslint-disable-next-line
-import Navigation from '../components/Navigation.vue'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 
 // import the app components
 import DemoApp from '../components/DemoApp.vue'
 
 export default {
   components: {
-    Navigation,
+    Header,
+    Footer,
     DemoApp,
   },
 }
 </script>
 
 <style lang="scss" scoped>
-#index-showcase {
-  display: flex;
-  justify-content: space-between;
-  & > div {
-    width: 48%;
-  }
-}
-
 #demo {
   // styles for macos-style window
   $border-radius: 6px;

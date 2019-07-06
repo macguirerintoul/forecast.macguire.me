@@ -1,16 +1,19 @@
 <template>
   <div id="container">
-    <Navigation />
+    <Header />
     <nuxt />
+    <Footer />
   </div>
 </template>
 <script>
 // eslint-disable-next-line
-import Navigation from '../components/Navigation.vue'
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   components: {
-    Navigation,
+    Header,
+    Footer,
   },
 }
 </script>
