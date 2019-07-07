@@ -38,9 +38,8 @@ export default {
         window.open(
           'https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.1.0.0.dmg'
         )
-      } else {
-        window.open('/download', '_self')
       }
+      window.open('/download', '_self')
     },
   },
 }
