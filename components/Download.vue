@@ -31,11 +31,15 @@ export default {
     },
     download() {
       if (this.os === 'Windows') {
-        window.open('https://www.w3schools.com')
+        window.open(
+          'https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.Setup.1.0.0.exe'
+        )
       } else if (this.os === 'macOS') {
-        window.open('https://www.w3schools.com')
+        window.open(
+          'https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.1.0.0.dmg'
+        )
       } else {
-        window.open('/releases', '_self')
+        window.open('/download', '_self')
       }
     },
   },

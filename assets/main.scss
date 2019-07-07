@@ -31,6 +31,10 @@ h1 {
   margin-bottom: 2rem;
   font-weight: 600;
 }
+h2 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
 h3 {
   font-size: 1em;
   font-weight: 400;
@@ -56,6 +60,7 @@ button {
     position: relative;
     top: 1px;
     width: 24px;
+    margin-right: 0.4rem;
   }
 }
 nav button {
