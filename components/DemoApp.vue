@@ -38,7 +38,7 @@
         <div id="links">
           <h6>
             Created by
-            <a href="https://mrintoul.com">Macguire Rintoul</a>
+            <a href="https://macguire.me">Macguire Rintoul</a>
           </h6>
           <h6>
             View on

@@ -5,7 +5,7 @@
     <Download />
     <h4>
       Created by
-      <a target="_blank" href="https://mrintoul.com">Macguire Rintoul</a>
+      <a target="_blank" href="https://macguire.me">Macguire Rintoul</a>
     </h4>
   </div>
 </template>
