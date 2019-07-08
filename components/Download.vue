@@ -32,11 +32,11 @@ export default {
     download() {
       if (this.os === 'Windows') {
         window.open(
-          'https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.Setup.1.0.0.exe'
+          'https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.Setup.1.0.1.exe'
         )
       } else if (this.os === 'macOS') {
         window.open(
-          'https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.1.0.0.dmg'
+          'https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.1.0.1.dmg'
         )
       }
       window.open('/download', '_self')

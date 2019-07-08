@@ -3,7 +3,7 @@
     <h1>Download</h1>
     <a
       target="_blank"
-      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.1.0.0.dmg"
+      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.1.0.1.dmg"
     >
       <button>
         <span><img src="macos.svg" alt="macOS icon"/></span>Download for macOS
@@ -11,7 +11,7 @@
     </a>
     <a
       target="_blank"
-      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.0/Forecast.Setup.1.0.0.exe"
+      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.Setup.1.0.1.exe"
     >
       <button>
         <span><img src="windows.svg" alt="Windows icon"/></span>Download for
