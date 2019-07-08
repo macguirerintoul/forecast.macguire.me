@@ -1,4 +1,6 @@
+@import './hover.css';
 $page-width: 55em;
+$page-padding: 0 2em;
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
@@ -7,13 +9,21 @@ html {
 #container {
   margin: auto;
   max-width: $page-width;
-  padding-top: 5em;
+  padding: $page-padding;
+  padding-top: 6rem;
 }
 #index-showcase {
   display: flex;
   justify-content: space-between;
+  & > div:first-of-type {
+    padding-top: 1em;
+  }
   & > div {
     width: 42%;
+  }
+  #try {
+    text-align: center;
+    margin-bottom: 0.5em;
   }
 }
 h1,
@@ -37,7 +47,7 @@ h2 {
 }
 h3 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: bolder;
 }
 h4 {
   font-weight: normal;
@@ -50,9 +60,12 @@ a {
   color: black;
 }
 button {
+  display: block;
   width: 100%;
+  max-width: 25rem;
   background: #fff;
   border: 1px solid black;
+  text-decoration: none;
   padding: 0.5em;
   border-radius: 6px;
   font-size: 1.5rem;
@@ -86,6 +99,7 @@ nav button {
   right: 0;
   max-width: $page-width;
   margin: auto;
+  padding: $page-padding;
 }
 
 .navbar,
@@ -124,7 +138,10 @@ nav button {
   justify-content: flex-end;
   margin-left: auto;
   .navbar-item {
-    padding-left: 1em;
+    padding: 0.5em;
+  }
+  .navbar-item:last-of-type {
+    padding-right: 0;
   }
 }
 
@@ -140,7 +157,23 @@ nav button {
   text-decoration: none;
 }
 
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+  // height: 3.25rem;
+  position: relative;
+  // width: 3.25rem;
+  margin-left: auto;
+  top: 0.5em;
+  height: fit-content;
+  padding: 0.5em;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
 footer {
   padding: 2rem;
   text-align: center;
 }
+
+@import './responsive.scss';

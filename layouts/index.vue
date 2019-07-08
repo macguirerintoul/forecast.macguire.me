@@ -6,6 +6,7 @@
         <nuxt />
       </div>
       <div id="demo">
+        <h3 id="try">Try it out:</h3>
         <div class="window">
           <div class="window__bar">Forecast</div>
           <div id="app-container">

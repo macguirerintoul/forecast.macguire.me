@@ -40,4 +40,7 @@
 button {
   margin-bottom: 1em;
 }
+a {
+  text-decoration: none;
+}
 </style>
