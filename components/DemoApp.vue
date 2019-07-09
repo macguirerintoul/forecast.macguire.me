@@ -37,12 +37,21 @@
         </ol>
         <div id="links">
           <h6>
-            Created by
-            <a href="https://macguire.me">Macguire Rintoul</a>
+            <a
+              href="https://forecast.macguire.me"
+              @click="openURL('https://forecast.macguire.me', $event)"
+              >Website</a
+            >
+            |
+            <a
+              href="https://github.com/mrintoul/forecast"
+              @click="openURL('https://github.com/mrintoul/forecast', $event)"
+              >GitHub</a
+            >
           </h6>
           <h6>
-            View on
-            <a href="https://github.com/mrintoul/forecast">GitHub</a>
+            Created by
+            <a href="https://macguire.me">Macguire Rintoul</a>
           </h6>
         </div>
       </div>
