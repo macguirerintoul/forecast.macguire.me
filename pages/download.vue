@@ -6,7 +6,7 @@
       href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.1.0.1.dmg"
     >
       <button>
-        <span><img src="macos.svg" alt="macOS icon"/></span>Download for macOS
+        <span><img src="/macos.svg" alt="macOS icon"/></span>Download for macOS
       </button>
     </a>
     <a
@@ -14,7 +14,7 @@
       href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.Setup.1.0.1.exe"
     >
       <button>
-        <span><img src="windows.svg" alt="Windows icon"/></span>Download for
+        <span><img src="/windows.svg" alt="Windows icon"/></span>Download for
         Windows
       </button>
     </a>
