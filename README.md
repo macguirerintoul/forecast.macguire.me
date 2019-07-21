@@ -1,22 +1,5 @@
-# forecast-site
+# [forecast.macguire.me](https://forecast.macguire.me)
 
-> The website for Forecast
+This repo contains the [Nuxt](https://nuxtjs.org/) site for my app, Forecast.
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+View [Forecast on GitHub](https://github.com/mrintoul/Forecast) or [check out the site](https://forecast.macguire.me).
