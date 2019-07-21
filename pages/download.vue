@@ -3,12 +3,12 @@
     <h1>Download</h1>
     <a target="_blank" :href="dmgUrl">
       <button>
-        <span><img src="macos.svg" alt="macOS icon"/></span>Download for macOS
+        <span><img src="/macos.svg" alt="macOS icon"/></span>Download for macOS
       </button>
     </a>
     <a target="_blank" :href="exeUrl">
       <button>
-        <span><img src="windows.svg" alt="Windows icon"/></span>Download for
+        <span><img src="/windows.svg" alt="Windows icon"/></span>Download for
         Windows
       </button>
     </a>
