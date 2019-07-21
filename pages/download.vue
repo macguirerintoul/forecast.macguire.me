@@ -1,18 +1,12 @@
 <template>
   <section>
     <h1>Download</h1>
-    <a
-      target="_blank"
-      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.1.0.1.dmg"
-    >
+    <a target="_blank" :href="dmgUrl">
       <button>
         <span><img src="macos.svg" alt="macOS icon"/></span>Download for macOS
       </button>
     </a>
-    <a
-      target="_blank"
-      href="https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.Setup.1.0.1.exe"
-    >
+    <a target="_blank" :href="exeUrl">
       <button>
         <span><img src="windows.svg" alt="Windows icon"/></span>Download for
         Windows
@@ -35,6 +29,30 @@
     </p>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      exeUrl: '',
+      dmgUrl: '',
+    }
+  },
+  mounted() {
+    fetch('https://api.github.com/repos/mrintoul/forecast/releases/latest')
+      .then(response => response.json())
+      .then(data => {
+        this.exeUrl = data.assets.find(element => {
+          return element.name.indexOf('exe') > -1
+        }).browser_download_url
+
+        this.dmgUrl = data.assets.find(element => {
+          return element.name.indexOf('dmg') > -1
+        }).browser_download_url
+      })
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 button {

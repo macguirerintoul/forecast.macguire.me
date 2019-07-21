@@ -10,7 +10,11 @@
 <script>
 export default {
   data() {
-    return { os: this.getOS() }
+    return {
+      os: this.getOS(),
+      exeUrl: '',
+      dmgUrl: '',
+    }
   },
   computed: {
     downloadString() {
@@ -23,21 +27,33 @@ export default {
       return ''
     },
   },
+  mounted() {
+    this.getAssets()
+  },
   methods: {
     getOS() {
       if (navigator.platform.indexOf('Win') > -1) return 'Windows'
       if (navigator.platform.indexOf('Mac') > -1) return 'macOS'
       return ''
     },
+    getAssets() {
+      fetch('https://api.github.com/repos/mrintoul/forecast/releases/latest')
+        .then(response => response.json())
+        .then(data => {
+          this.exeUrl = data.assets.find(element => {
+            return element.name.indexOf('exe') > -1
+          }).browser_download_url
+
+          this.dmgUrl = data.assets.find(element => {
+            return element.name.indexOf('dmg') > -1
+          }).browser_download_url
+        })
+    },
     download() {
       if (this.os === 'Windows') {
-        window.open(
-          'https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.Setup.1.0.1.exe'
-        )
+        window.open(this.exeUrl)
       } else if (this.os === 'macOS') {
-        window.open(
-          'https://github.com/mrintoul/Forecast/releases/download/v1.0.1/Forecast.1.0.1.dmg'
-        )
+        window.open(this.dmgUrl)
       }
       window.open('/download', '_self')
     },
