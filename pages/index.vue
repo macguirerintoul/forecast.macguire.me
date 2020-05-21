@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Forecast is simple.</h1>
-    <p>It’s like a to-do list for procrastinators.</p>
+    <p>It shows you the time remaining until your tasks are due.</p>
     <Download />
     <h4>
       Created by
