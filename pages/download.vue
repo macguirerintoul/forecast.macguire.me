@@ -15,7 +15,7 @@
 
     <h2>Installation notes</h2>
     <p>
-      Because this is an unsigned app, your operating system might present you
+      Because this is an unsigned app (i.e. I don't feel like giving Apple $99 to join the Developer Program), your operating system might present you
       with warnings. If you see something like 'more info', click that and it
       should let you proceed.
     </p>

@@ -18,8 +18,7 @@
     <p>Three, I wanted to practice my design and development skills.</p>
     <p>
       Now, here we are. If you have any issues or suggestions (or you want to
-      hire me), send me an email at <span>macguire</span><span>.rintoul</span
-      ><span>@gmai</span>l.com.
+      hire me), you can <a href="https://macguire.me/contact">contact me here</a>.
     </p>
     <Download />
   </section>
