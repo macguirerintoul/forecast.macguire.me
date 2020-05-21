@@ -4,12 +4,15 @@ module.exports = {
     node: true
   },
   extends: [
+    "eslint:recommended",
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
-    'prettier/vue'
+    'prettier/vue',
+    "plugin:nuxt/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   rules: {
-    'no-console': 'off',
     'prettier/prettier': 'warn'
   },
   parserOptions: {

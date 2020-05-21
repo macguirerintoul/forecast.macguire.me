@@ -51,11 +51,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/google-analytics'],
-  googleAnalytics: {
-    id: 'UA-143405741-1',
-    dev: false,
-  },
+  modules: [],
   /*
    ** Build configuration
    */
@@ -63,7 +59,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    // eslint-disable-next-line
-    extend(config, ctx) {},
+    extend(config, ctx) { },
   },
 }
