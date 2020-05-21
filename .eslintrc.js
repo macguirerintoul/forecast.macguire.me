@@ -13,7 +13,9 @@ module.exports = {
     "plugin:import/warnings"
   ],
   rules: {
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
   },
   parserOptions: {
     parser: 'babel-eslint'
