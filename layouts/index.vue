@@ -20,9 +20,6 @@ import {CldVideo, CldTransformation} from "cloudinary-vue"
 import Header from '../components/Header.vue'
 import Footer from "../components/Footer.vue";
 
-// import the app components
-import DemoApp from "../components/DemoApp.vue";
-
 export default {
 	components: {
 		Header,
