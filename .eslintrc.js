@@ -1,20 +1,21 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
     node: true
   },
-  plugins: ['prettier'],
   extends: [
+    "eslint:recommended",
     'plugin:vue/recommended',
-    'airbnb-base',
     'plugin:prettier/recommended',
-    'prettier/vue'
+    'prettier/vue',
+    "plugin:nuxt/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
-  // add your custom rules here
   rules: {
-    'no-console': 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'warn',
+    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
   },
   parserOptions: {
     parser: 'babel-eslint'
