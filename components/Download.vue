@@ -22,8 +22,9 @@ export default {
 		},
 		icon() {
 			if (this.os === "Windows")
-				return '<img src="windows.svg" alt="Windows icon"/>';
-			if (this.os === "macOS") return '<img src="macos.svg" alt="macOS icon"/>';
+				return '<img src="windows.svg" alt="Windows icon."/>';
+			if (this.os === "macOS") return '<img src="macos.svg" alt="macOS icon."/>';
+			if (this.os === "Linux") return '<img src="linux.svg" alt="Linux icon."/>';
 			return "";
 		}
 	},
@@ -34,6 +35,7 @@ export default {
 		getOS() {
 			if (navigator.platform.indexOf("Win") > -1) return "Windows";
 			if (navigator.platform.indexOf("Mac") > -1) return "macOS";
+			if (navigator.platform.indexOf("Linux") > -1) return "Linux";
 			return "";
 		},
 		getAssets() {
@@ -43,9 +45,11 @@ export default {
 					this.exeUrl = data.assets.find(element => {
 						return element.name.indexOf("exe") > -1;
 					}).browser_download_url;
-
 					this.dmgUrl = data.assets.find(element => {
 						return element.name.indexOf("dmg") > -1;
+					}).browser_download_url;
+					this.appImageUrl = data.assets.find(element => {
+						return element.name.indexOf("AppImage") > -1;
 					}).browser_download_url;
 				});
 		},
@@ -54,6 +58,8 @@ export default {
 				window.open(this.exeUrl);
 			} else if (this.os === "macOS") {
 				window.open(this.dmgUrl);
+			} else if (this.os === "Linux") {
+				window.open(this.appImageUrl)
 			}
 			window.open("/download", "_self");
 		}

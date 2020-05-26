@@ -8,7 +8,7 @@
 			:items="events"
 			transition-key="_id"
 		>
-			<template v-slot="{ item, index, revealLeft, revealRight, close }">
+			<template v-slot="{ item, index }">
 				<Event
 					:index="index"
 					:title="item.title"

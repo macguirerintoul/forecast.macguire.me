@@ -12,6 +12,11 @@
 				Windows
 			</button>
 		</a>
+		<a target="_blank" :href="appImageUrl">
+			<button>
+				<span><img src="/linux.svg" alt="Linux icon"/></span>Download for Linux
+			</button>
+		</a>
 
 		<h2>Installation notes</h2>
 		<p>
@@ -36,7 +41,8 @@ export default {
 	data() {
 		return {
 			exeUrl: "",
-			dmgUrl: ""
+			dmgUrl: "",
+		appImageUrl: "",
 		};
 	},
 	mounted() {
@@ -50,6 +56,10 @@ export default {
 				this.dmgUrl = data.assets.find(element => {
 					return element.name.indexOf("dmg") > -1;
 				}).browser_download_url;
+
+				this.appImageUrl = data.assets.find(element => {
+						return element.name.indexOf("AppImage") > -1;
+					}).browser_download_url;
 			});
 	}
 };

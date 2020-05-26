@@ -12,10 +12,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "moment": "2.26.0",
-    "nuxt": "2.12.2",
-    "vue-notification": "1.3.20",
-    "vue-swipe-actions": "2.0.0-beta.12"
+    "cloudinary-vue": "^1.0.1",
+    "current-script-polyfill": "^1.0.0",
+    "nuxt": "2.12.2"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
